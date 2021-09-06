@@ -20,10 +20,19 @@ include('cart.php');
 
 
     if(isset($_POST['checkout'])){
-        $id = $_SESSION['cart'][$index]['idProduct'];
+        // $id = $_SESSION['cart'][$i]['idProduct'];
+        $id = $_SESSION['cart'][$i]['idProduct'];
+            $name = $_SESSION['cart'][$i]['name'];
+            $image = $_SESSION['cart'][$i]['image'];
+            $price = $_SESSION['cart'][$i]['price'];
+            $description = $_SESSION['cart'][$i]['description'];
+            $category = $_SESSION['cart'][$i]['category'];
+            $quentity = $_SESSION['cart'][$i]['quentity'];
     }
 
 ?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -33,31 +42,27 @@ include('cart.php');
     <body>
         <div class="main-container">
                 <h1>Shopping Cart</h1>
-            <div class="shopping-cart">
+                <div class="shopping-cart">
 
-                <div class="column-labels">
-                    <label class="product-image">Image</label>
-                    <label class="product-details">Product</label>
-                    <label class="product-price">Price</label>
-                    <label class="product-quantity">Quantity</label>
-                    <label class="product-removal">Remove</label>
-                    <label class="product-line-price">Total</label>
-                </div>
-
-            </div>
-        </div>
-    </body>
-</html>
+                    <div class="column-labels">
+                        <label class="product-image">Image</label>
+                        <label class="product-details">Product</label>
+                        <label class="product-price">Price</label>
+                        <label class="product-quantity">Quantity</label>
+                        <label class="product-removal">Remove</label>
+                        <label class="product-line-price">Total</label>
+                    </div>
 
 <?php
 // config....
 
-    // $id = $name = $price = $stock = $totalprice = 0;
-    // $description = $image = $category = '';
+    $id = $name = $price = $stock = $totalprice = 0;
+    $description = $image = $category = '';
+    $quentity =1;
     if(empty($_SESSION['cart'])){
-        $empty = 'You have an empty Cart :(';
+         echo "<h2 style='text-align:center;'>You have an empty Cart :(</h2>";
     }else{
-        foreach($_SESSION['cart'] as $i => $value){
+        foreach($_SESSION['cart'] as $i => $row){
             $totalprice = 0;
             $totalcost = 0;
             $id = $_SESSION['cart'][$i]['idProduct'];
@@ -74,54 +79,57 @@ include('cart.php');
                 
             }
             $quentity=$_SESSION['cart'][$i]['quentity'];
-    
-            $totalprice = $price*$quentity;
+            $totalprice = $price*$quentity; 
             $totalcost+=$totalprice;
-    }
-
-
+            
+            $_SESSION['pid'] = $id;
+            $_SESSION['qtnty'] = $quentity;
+            $_SESSION['amount'] = $totalcost;
 ?>
-    <div class="main-container">
-        
-        <div class="shooping-cart">
-            <form method="POST">
 
-                <div class="product">
-                    
-                    <div class="product-image">
-                        <img src="<?php echo '../media/'.$image; ?>">
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title"><?php echo $name; ?></div>
-                        <p class="product-description"><?php echo $description; ?></p>
-                    </div>
-                    <div class="product-price">$<?php echo $price; ?></div>
-                        <div class="product-quantity">
-                        <input type="number" name="quentity<?php echo $i; ?>" value="<?php echo $quentity; ?>" min="1">
-                    </div>
-                
-                    <div class="product-removal">
-                        <button class="remove-product" type='submit' name="edit<?php echo $i; ?>">Edit</button>
-                        <button class="remove-product"><a href="delete.php?remove=<?php echo $i ?>">Remove</a></button>
-                    </div>
-                    <div class="product-line-price">$<?php echo $totalprice; ?></div>
+                    <form method="POST">
+
+                        <div class="product">
+                        
+                            <div class="product-image">
+                                <img src="<?php echo '../media/'.$image; ?>">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-title"><?php echo $name; ?></div>
+                                <p class="product-description"><?php echo $description; ?></p>
+                            </div>
+                            <div class="product-price">$<?php echo $price; ?></div>
+                                <div class="product-quantity">
+                                <input type="number" name="quentity<?php echo $i; ?>" value="<?php echo $quentity; ?>" min="1">
+                            </div>
+                        
+                            <div class="product-removal">
+                                <button class="remove-product" type='submit' name="edit<?php echo $i; ?>">Edit</button>
+                                <button class="remove-product"><a href="delete.php?remove=<?php echo $i ?>">Remove</a></button>
+                            </div>
+                            <div class="product-line-price">$<?php echo $totalprice; ?></div>
+                        </div>
+                        
+                    </form>
                 </div>
-                    
-            </form>
         </div>
-    </div>
-
-<?php 
+   
+        
+                
+<?php
+      }
     }
+           
 ?>
-    <form method="POST">
-        <div class="t-c">
-            <label>Total Amount: $<?php echo $totalcost; ?></label>
-        </div>
-        <div class="check-out">
-            <button class="checkout"><a href='product.php'>Go Back</a></button>
-            <button class="checkout" type="submit" name="checkout"><a href='payment.php'>Checkout</a></button>
-        </div>
-    </form>
-
+                <form method="POST">
+                    <div class="t-c">
+                        <label>Total Amount: $<?php echo $totalcost; ?></label>
+                    </div>
+                    <div class="check-out">
+                        <button class="checkout"><a href='product.php'>Go Back</a></button>
+                        <button class="checkout" type="submit" name="checkout"><a href='payment.php'>Checkout</a></button>
+                    </div>
+                </form>
+    </body>
+</html>
 

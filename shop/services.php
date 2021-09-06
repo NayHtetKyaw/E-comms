@@ -15,7 +15,7 @@ if(empty($_SESSION['username'])){
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Pelrata &mdash; Services</title>
+	<title>New World Mart &mdash; Services</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
@@ -55,7 +55,7 @@ if(empty($_SESSION['username'])){
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.php">Pelrata</a></div>
+					<div id="fh5co-logo"><a href="index.php">New World Mart</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
@@ -65,7 +65,7 @@ if(empty($_SESSION['username'])){
 								<li><a href="single.php">Single Shop</a></li>
 							</ul>
 						</li>
-						<li><a href="about.html">About</a></li>
+						<li><a href="about.php">About</a></li>
 						<li class="has-dropdown active">
 							<a href="services.php">Services</a>
 						</li>
@@ -119,8 +119,8 @@ if(empty($_SESSION['username'])){
 						<span class="icon">
 							<i class="icon-credit-card"></i>
 						</span>
-						<h3>Credit Card</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<h3>Payments</h3>
+						<p>Payment informations are all encryped and secure with two-factor authentication. Your trust is Our Value</p>
 						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
@@ -130,7 +130,7 @@ if(empty($_SESSION['username'])){
 							<i class="icon-wallet"></i>
 						</span>
 						<h3>Save Money</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p>You can buy more than 5 products at once and save your money by 20% discount and gain store credit points</p>
 						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
@@ -140,7 +140,7 @@ if(empty($_SESSION['username'])){
 							<i class="icon-paper-plane"></i>
 						</span>
 						<h3>Free Delivery</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p>Free Delivery services to local areas where we have our warehouses. And most reasonable shipping fees. </p>
 						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
@@ -150,7 +150,7 @@ if(empty($_SESSION['username'])){
 							<i class="icon-calendar"></i>
 						</span>
 						<h3>Lifetime Warranty</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p>Customer is always first for our company. We will take resposible for our products and give best supports</p>
 						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
@@ -160,7 +160,7 @@ if(empty($_SESSION['username'])){
 							<i class="icon-clapperboard"></i>
 						</span>
 						<h3>Branded Model</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p>We ensure you about our brand. All of our proudcts carefully builts with best quality by real professionals</p>
 						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
@@ -170,7 +170,7 @@ if(empty($_SESSION['username'])){
 							<i class="icon-drive"></i>
 						</span>
 						<h3>Affordable</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p>Our Goal is to create a brand that every family can afford the best qualities with reasonable prices</p>
 						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
@@ -208,8 +208,8 @@ if(empty($_SESSION['username'])){
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>Pelrata</h3>
-                        <p>Pelrata is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
+                        <h3>New World Mart</h3>
+                        <p>New World Mart is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
                         <ul class="fh5co-footer-links">

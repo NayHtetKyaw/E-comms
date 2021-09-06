@@ -17,7 +17,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pelrata &mdash; Contact Us</title>
+    <title>New World Mart &mdash; Contact Us</title>
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-xs-2">
-                        <div id="fh5co-logo"><a href="index.php">Pelrata</a></div>
+                        <div id="fh5co-logo"><a href="index.php">New World Mart</a></div>
                     </div>
                     <div class="col-md-6 col-xs-6 text-center menu-1">
                         <ul>
@@ -206,8 +206,8 @@
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>Pelrata</h3>
-                        <p>Pelrata is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
+                        <h3>New World Mart</h3>
+                        <p>New World Mart is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
                         <ul class="fh5co-footer-links">

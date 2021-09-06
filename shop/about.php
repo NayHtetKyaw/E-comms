@@ -16,7 +16,7 @@ if(empty($_SESSION['username'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pelrata &mdash; About us</title>
+    <title>New World Mart &mdash; About us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
@@ -57,7 +57,7 @@ if(empty($_SESSION['username'])){
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-xs-2">
-                        <div id="fh5co-logo"><a href="index.php">Pelrata</a></div>
+                        <div id="fh5co-logo"><a href="index.php">New World Mart</a></div>
                     </div>
                     <div class="col-md-6 col-xs-6 text-center menu-1">
                         <ul>
@@ -106,10 +106,10 @@ if(empty($_SESSION['username'])){
                         <div class="display-t">
                             <div class="display-tc animate-box" data-animate-effect="fadeIn">
                                 <h1>About Us</h1>
-                                <h2 style="text-align: justify;">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-                                    <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem
-                                        minima.
+                                <h2 style="text-align: center;">
+                                    <p>One of the best Furniture stores</p>
+                                    <p>Welcome to New World Mart, your number one source for all Furniture
+                                        .We're dedicated to giving you the very best of products, with a focus on customer's need.</p>
                                 </h2>
                             </div>
                         </div>
@@ -125,16 +125,17 @@ if(empty($_SESSION['username'])){
                         <div class="col-md-6">
                             <div class="desc">
                                 <h3>Company History</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-                                <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem
-                                    minima.
+                                <p>Founded in [year] by [founder name], New World Mart has come a long way from its beginnings in [starting location]. When [founder name] first started out,
+                                     [his/her/their] passion for [brand message - e.g. "eco-friendly cleaning products"] drove them to start their own business.
+                                    We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.    
                                 </p>
                             </div>
                             <div class="desc">
                                 <h3>Mission &amp; Vission</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-                                <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem
-                                    minima.
+                                <p>We aim to be Earth’s most customer centric company. Our mission is to continually raise the
+                                     bar of the customer experience by using the internet and technology to help consumers find,
+                                      discover and buy anything, and empower businesses and content creators to maximise their success.
+
                                 </p>
                             </div>
                         </div>
@@ -227,8 +228,8 @@ if(empty($_SESSION['username'])){
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>Pelrata</h3>
-                        <p>Pelrata is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
+                        <h3>New World Mart</h3>
+                        <p>New World Mart is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
                         <ul class="fh5co-footer-links">

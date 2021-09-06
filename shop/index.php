@@ -43,7 +43,7 @@ include('cart.php');
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pelrata &mdash; Home</title>
+    <title>New World Mart &mdash; Home</title>
 
     
     <!-- Animate.css -->
@@ -81,7 +81,7 @@ include('cart.php');
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-xs-2">
-                        <div id="fh5co-logo"><a href="index.php">Pelrata.</a></div>
+                        <div id="fh5co-logo"><a href="index.php">New World Mart.</a></div>
                     </div>
                     <div class="col-md-6 col-xs-6 text-center menu-1">
                         <ul>
@@ -349,7 +349,7 @@ include('cart.php');
                                         </figure>
                                         <span>Nay Win Aaung</span>
                                         <blockquote>
-                                            <p>&ldquo;Pelrata is the best furniture store and they provides the best services. I love Pelrata furniture. Thank you for good products&rdquo;</p>
+                                            <p>&ldquo;New World Mart is the best furniture store and they provides the best services. I love New World Mart furniture. Thank you for good products&rdquo;</p>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -360,7 +360,7 @@ include('cart.php');
                                         </figure>
                                         <span>Kyaw Myo Tun </span>
                                         <blockquote>
-                                            <p>&ldquo;Thank you Pelrata for help us decorating our beautiful home. Pelrata Forever.&rdquo;</p>
+                                            <p>&ldquo;Thank you New World Mart for help us decorating our beautiful home. New World Mart Forever.&rdquo;</p>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -414,8 +414,8 @@ include('cart.php');
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>Pelrata</h3>
-                        <p>Pelrata is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
+                        <h3>New World Mart</h3>
+                        <p>New World Mart is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
                         <ul class="fh5co-footer-links">

@@ -14,27 +14,50 @@
         header('Location:index.php');  
     }
 
+    $id = $_SESSION['pid'];
+    $quentity = $_SESSION['qtnty'];
+    $amount = $_SESSION['amount'];
+
     $customerID = $_SESSION['id'];
     if(isset($_POST['submit'])){
 
         $card_number=$_POST['card_number'];
         $method= strtoupper($_POST['method']);
-        $name = $_SESSION['username'];
+        $name = $_POST['name'];
 
-        $statement = ("INSERT INTO Payments(idPayment,customer_id,cardNo,Customer_Name)
-        VALUES('$method','$customerID','$card_number','$name')");
-
+        $statement = ("INSERT INTO Payments(customer_id,cardNo,Customer_Name,method)
+        VALUES('$customerID','$card_number','$name','$method')");
         $connection->exec($statement);
 
+        
     }
+        $statement=("SELECT * FROM Payments WHERE customer_id='$customerID'");
+        $result = $connection->query($statement);
 
+        foreach($result as $row){
+            $idPayment = $row['idPayment'];
+        }
+        // echo $idPayment."<br>";
+        // echo $customerID."<br>";
+        // echo $id."<br>";
+        // echo $amount."<br>";
+        // echo $quentity;
+
+        $statement = ("INSERT INTO orders(customer,product_id,amount,quentity,payment)
+        VALUES('$customerID','$id','$amount','$quentity','$idPayment')");
+
+        $connection->exec($statement);
+       
+        if(isset($_POST['goback'])){
+            session_unset();
+        }
 ?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Pelrata &mdash; Services</title>
+	<title>New World Mart &mdash; Services</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
@@ -74,7 +97,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.php">Pelrata</a></div>
+					<div id="fh5co-logo"><a href="index.php">New World Mart</a></div>
 				</div>
                 <div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
@@ -105,7 +128,7 @@
                 <div id="card-front">
                         <div id="shadow"></div>
                         <div id="image-container">
-                            <span id="amount">paying: <strong>$99</strong></span>
+                            <span id="amount">paying: <strong>$<?php echo $amount; ?></strong></span>
                             <span id="card-image"></span>
                         </div>
                     <!--- end card image container --->
@@ -139,7 +162,7 @@
                 <!--- end card back --->
                 <input type="text" id="card-token" />
                 <div class="btns">
-                    <button type="button" class="goback-btn"><a href='checkout.php'>Go Back</a></button>
+                    <button type="submit" name='goback' class="goback-btn"><a href='checkout.php'>Go Back</a></button>
                     <button type="submit" name="submit" class="done-btn"><a href='index.php'>Done</a></button>
                 </div>
 
@@ -154,8 +177,8 @@
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>Pelrata</h3>
-                        <p>Pelrata is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
+                        <h3>New World Mart</h3>
+                        <p>New World Mart is one of the Best Furniture Stores You can find. Let's us help you decorate a sweetest home .We Value customer's trust</p>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
                         <ul class="fh5co-footer-links">
@@ -227,7 +250,7 @@
 <!-- <!DOCTYPE html>
 <html>
     <head>
-        <title>Pelrata &mdash; Payment </title>
+        <title>New World Mart &mdash; Payment </title>
         
     </head>
     <body>
